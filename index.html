@@ -26,6 +26,15 @@
 		<input type="submit" value="Save">
 	</form>
 	
+	<h2 id="title"></h2>
+	<p id="content"></p>
+
+	<script>
+	const Note1 = {title:"Shopping List", content:"1 Apple<br>1 Avocado<br><b>2 Things</b><br>5 People"};
+	document.getElementById("title").innerHTML = Note1.title;
+	document.getElementById("content").innerHTML = Note1.content;
+	</script>
+	
 	<script src="scripts/settings.js"></script>
 	
 </body>
