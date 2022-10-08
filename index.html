@@ -2,9 +2,26 @@
 <html>
 <body>
 
-<h2>Notes</h2>
-<p id="demo">Reminder to go shopping.</p>
-<button type="button" onclick="displayNotes()">Sync</button>
+  <h2>Notes</h2>
+  <p id="demo">Reminder to go shopping.</p>
+  <button type="button" onclick="displayNotes()">Sync</button>
+  
+  <form action="/notes.php">
+    <input type="checkbox" name="Tag1">
+    <label for="Tag1">Red</label>
+    <input type="checkbox" name="Tag2">
+    <label for="Tag2">Blue</label>
+    <input type="checkbox"name="Tag3">
+    <label for="Tag3">Green</label>
+    <br><br>
+    <label for="Name1">Name:</label>
+    <input type="text" name="Name1" value="">
+    <br><br>
+    <label for="Note1">Note:</label>
+    <input type="text" name="Note1" value="">
+    <br><br>
+    <input type="submit" value="Save">
+  </form>
 
 <script src="scripts/settings.js"></script>
 
